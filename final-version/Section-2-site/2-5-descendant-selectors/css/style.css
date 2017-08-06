@@ -90,8 +90,9 @@ h2 {
 p {
   font: normal normal 18px/1.6 Georgia, 'Times New Roman', serif;
 }
-.column-title {
-  font-style: normal;
-  color: #0072ae;
-  font-weight: bold;
+
+.secondary-section h2 {
+    font-weight: bold;
+    color: #0072ae;
+    font-size: 40px;
 }
