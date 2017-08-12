@@ -279,6 +279,68 @@ nav figure {
     position: absolute;
     top: -20px;
     left: 50px;
+    -webkit-animation-name: crazyShark;
+    -moz-animation-name: crazyShark;
+    -o-animation-name: crazyShark;
+    animation-name: crazyShark;
+
+    -webkit-animation-duration: 1.25s;
+    -moz-animation-duration: 1.25s;
+    -o-animation-duration: 1.25s;
+    animation-duration: 1.25s;
+
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+
+    -webkit-animation-iteration-count: 3;
+    -moz-animation-iteration-count: 3;
+    -o-animation-iteration-count: 3;
+    animation-iteration-count: 3;
+
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    -o-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}
+
+@keyframes crazyShark {
+    0% {
+        -webkit-transform: translate(90%, 70%);
+        -moz-transform: translate(90%, 70%);
+        -ms-transform: translate(90%, 70%);
+        -o-transform: translate(90%, 70%);
+        transform: translate(90%, 70%);
+        opacity: 0;
+    }
+    33% {
+        -webkit-transform: translate(40%, 20%) rotate(90deg);
+        -moz-transform: translate(40%, 20%) rotate(90deg);
+        -ms-transform: translate(40%, 20%) rotate(90deg);
+        -o-transform: translate(40%, 20%) rotate(90deg);
+        transform: translate(40%, 20%) rotate(90deg);
+    }
+    66% {
+        -webkit-transform: translate(10%, 50%);
+        -moz-transform: translate(10%, 50%);
+        -ms-transform: translate(10%, 50%);
+        -o-transform: translate(10%, 50%);
+        transform: translate(10%, 50%);
+    }
+    100% {
+        -webkit-transform: translate(0%) rotate(360deg);
+        -moz-transform: translate(0%) rotate(360deg);
+        -ms-transform: translate(0%) rotate(360deg);
+        -o-transform: translate(0%) rotate(360deg);
+        transform: translate(0%) rotate(360deg);
+        opacity: 1;
+    }
 }
 
 nav img {
@@ -339,10 +401,12 @@ Sub menu
     overflow: hidden;
     display: none;
 }
+
 .has-submenu a {
     display: block;
     padding: 20px 0;
 }
+
 .has-submenu:hover ul {
     display: block;
 
