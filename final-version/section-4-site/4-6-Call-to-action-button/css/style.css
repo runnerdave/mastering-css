@@ -315,7 +315,10 @@ Go premium
     font-size: 22px;
     font-weight: bold;
     text-align: center;
-    transition: all 0.2s linear;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all 1.25s ease-in-out;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,0071ae+66 */
     background: #0071ae; /* Old browsers */
     background: -moz-linear-gradient(top, #1e5799 0%, #0071ae 66%); /* FF3.6-15 */
