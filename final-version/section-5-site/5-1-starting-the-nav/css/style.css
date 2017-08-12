@@ -391,6 +391,7 @@ Sub menu
 ****************/
 .has-submenu ul {
     position: absolute;
+    z-index: 5;
     top: 70px;
     background-color: #ffffff;
     border-bottom: 1px solid #ada791;
@@ -405,6 +406,8 @@ Sub menu
 .has-submenu a {
     display: block;
     padding: 20px 0;
+    position: relative;
+    z-index: 10;
 }
 
 .has-submenu:hover ul {
